@@ -58,22 +58,14 @@
               <span class="author-block">
   <a href="#" target="_blank">Lyes Saad Saoud</a>,</span>
 <span class="author-block">
-  <a href="#" target="_blank">Loïc Lesobre</a>,</span>
-<span class="author-block">
-  <a href="#" target="_blank">Enrico Sorato</a>,</span>
-<span class="author-block">
-  <a href="#" target="_blank">Saud Al Qaydi</a>,</span>
-<span class="author-block">
-  <a href="#" target="_blank">Yves Hingrat</a>,</span>
-<span class="author-block">
-  <a href="#" target="_blank">Lakmal Seneviratne</a>,</span>
+  
 <span class="author-block">
   <a href="#" target="_blank">Irfan Hussain</a>
 </span>
 </div>
 
 <div class="is-size-5 publication-authors">
-  <span class="author-block">Khalifa University of Science and Technology, UAE<br>RENECO International Wildlife Consultants LLC, UAE<br>International Fund for Houbara Conservation (IFHC), UAE<br>Preprint 2024</span>
+  <span class="author-block">Khalifa University of Science and Technology, UAE<br>Preprint 2024</span>
   
 </div>
 
@@ -103,7 +95,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/LyesSaadSaoud/HuBotDetSeg" target="_blank"
+                    <a href="https://github.com/LyesSaadSaoud/VSLAM" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -144,13 +136,15 @@
       </div>
 
       <h2 class="subtitle has-text-centered">
-        HuBot’s autonomous bird observational system.
-        HuBot leverages real-time bird detection via a YOLOv9 deep
-        learning model to scan its environment. MobileSAM further
-        refines its location and distance upon identifying a bird through
-        sensor fusion techniques. This information allows HuBot to
-        autonomously adjust its position and approach the bird while
-        executing pre-programmed behaviors for closer observation.
+        Overview of the proposed Semantic-Aware Adaptive 3D Mapping Framework with Vision-Language Reasoning. The
+ framework integrates semantic and geometric features for robust 3D mapping and pose optimization. RGB inputs are processed
+ with Depth Anything V2 for dense depth estimation and CLIP for zero-shot object classification, enabling semantic context
+ analysis. Semantic-Aware Depth Fusion combines geometric consistency with semantic features, improving spatial accuracy
+ and adaptability. LLaMa dynamically adjusts mapping parameters, including keyframe selection, pruning, and iterations, based
+ on detected features and scene analysis. Gaussian-splatting with multi-channel optimization refines mapping through pose
+ adjustments, densification, and redundancy removal. The outputs include 3D reconstructions, pose trajectories, and keyframe
+ metrics such as PSNR, RPE, ATE, and SSIM, supporting applications in autonomous navigation, underwater exploration, and
+ intelligent robotics.
       </h2>
     </div>
   </div>
@@ -169,8 +163,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-The Houbara bustard, an avian species of conservation concern, poses significant challenges to researchers because of its elusive nature and sensitivity to human disturbances. Traditional research methods, often reliant on human observations, face some challenges and can inadvertently affect bird behavior. To overcome these limitations, we propose the HuBot, a biomimetic mobile robot designed to seamlessly integrate into the natural habitat of Houbara. By employing advanced real-time deep- learning algorithms, including YOLOv9 for detection, MobileSAM for segmentation, and vision transformer (ViT) for depth estimation, HuBot semi-autonomously tracks individual birds, providing un- precedented insights into their individual behavior, social interactions, and habitat use. HuBot can thus contribute to a deeper understanding of Houbara  behavior and its ecology. The biomimetic design of the robot, including its life-like appearance and movement capabilities, minimizes disturbance, allowing for monitoring of Houbara  birds while minimizing disruption to their behavior. Rigorous testing, including extensive laboratory experiments and field trials on challenging terrains, validated the performance of HuBot as a complementary tool for traditional observation methods. 
-          </p>
+This paper introduces an AI-driven semantic-aware SLAM framework that combines Large Language Models (LLMs), CLIP-based zero-shot recognition, real-time dense depth estimation using DepthAnythingV2, and a novel semantic-depth fusion mechanism for enhanced 3D mapping and pose optimization. Unlike traditional SLAM systems that rely exclusively on geometric features, the proposed framework integrates semantic reasoning with geometry-based optimization, enabling robust scene understanding and adaptive mapping in challenging environments such as cluttered indoor/outdoor scenes, dynamic objects, and low-light conditions.
+The framework features a semantic-depth fusion module that refines depth maps by dynamically adjusting confidence values based on the semantic classification of corresponding image features. Real-time dense depth estimation is achieved using DepthAnythingV2, eliminating the need for offline preprocessing and enabling adaptability to dynamic scenes. Context-aware feature classification via CLIP and semantic reasoning through LLMs improve keyframe selection and enhance mapping reliability, particularly in the presence of occlusions, reflective surfaces, and structural ambiguities.
+Experiments on the Replica dataset using 200-frame sequences demonstrate promising performance in absolute trajectory error (ATE), relative pose error (RPE), and perceptual metrics such as PSNR and IoU. Notably, the integration of semantic-depth fusion achieves higher depth consistency and improved spatial accuracy. However, results reveal limitations in handling reflective surfaces and achieving high segmentation accuracy (IoU remains low without segment masks). Ablation studies further validate the contributions of semantic-depth fusion and AI-guided perception, emphasizing scalability and adaptability to diverse scenarios.
+While the presented results provide a strong proof of concept, limitations in dataset size and experimental scope are acknowledged. Future work will focus on expanding experimental validation, addressing reflective surface challenges, and enhancing semantic segmentation capabilities. This work advances semantic SLAM by bridging AI-driven perception with real-time 3D mapping, offering a foundation for significant improvements in autonomous navigation, robotics, and augmented reality applications.          </p>
         </div>
       </div>
     </div>
