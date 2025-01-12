@@ -183,9 +183,9 @@ While the presented results provide a strong proof of concept, limitations in da
         <!-- Image 3 -->
         <div class="item">
           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/image71.png" alt="Qualitative comparison of segmentation results" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <img src="static/images/Fig3.png" alt="Visualization of input images, dehazed outputs, and corresponding depth maps" style="max-width: 80%; height: auto; border-radius: 10px;">
             <h2 class="subtitle has-text-centered">
-              <strong>Figure 1:</strong> Qualitative comparison of segmentation results. This figure compares the segmentation performance of various models on sample images, highlighting differences in segmentation quality and accuracy. (a) Input image, (b) ground truth, (c) DeepLabV3, (d) LRASPP, (e) FCN, (f) Mask R-CNN, (g) YOLOv5-Seg, (h) YOLOv8-Seg, (i) Detectron2, (j) MobileSAM Baseline, and (k) YOLOv9+MobileSAM.
+              <strong>Fig. 3:</strong> Visualization of input images, dehazed outputs, and corresponding depth maps. The first column shows the original input images. The second column presents the dehazed results, and the third column displays the estimated depth maps. These examples highlight improvements in visibility and geometric consistency achieved by the preprocessing and depth estimation steps.
             </h2>
           </div>
         </div>
@@ -193,9 +193,9 @@ While the presented results provide a strong proof of concept, limitations in da
         <!-- Image 4 -->
         <div class="item">
           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/image61.png" alt="Comparative visual illustration of state-of-the-art depth estimation methods" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <img src="static/images/Fig4.png" alt="Visualization of the estimated trajectory within the pool environment" style="max-width: 80%; height: auto; border-radius: 10px;">
             <h2 class="subtitle has-text-centered">
-              <strong>Figure 2:</strong> A comparative visual illustration of state-of-the-art depth estimation methods applied to sample images from the depth dataset. This comparison includes the local-depth estimation approach implemented in the Hubot alongside other baseline methods. Sample images span a range of lighting conditions for assessing their impact on depth-estimation performance.
+              <strong>Fig. 4:</strong> Visualization of the estimated trajectory within the pool environment. The top-left plot shows the top-down view (X-Y plane), illustrating the horizontal movement of the system. The top-right plot displays the side view (X-Z plane), capturing variations in height along the X-axis. The bottom-left plot presents the front view (Y-Z plane), highlighting vertical movements along the Y-axis. The bottom-right 3D plot provides a comprehensive spatial representation of the trajectory. Color variations across all views represent the frame sequence progression, emphasizing transitions and motion patterns throughout the dataset.
             </h2>
           </div>
         </div>
@@ -203,9 +203,9 @@ While the presented results provide a strong proof of concept, limitations in da
         <!-- Image 5 -->
         <div class="item">
           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/image51.png" alt="Processed images of Houbara bustards demonstrating detection and positioning" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <img src="static/images/Fig5.png" alt="Results for Room0 of the Replica dataset using segment masks" style="max-width: 80%; height: auto; border-radius: 10px;">
             <h2 class="subtitle has-text-centered">
-              <strong>Figure 3:</strong> Processed images of Houbara bustards demonstrating detection and relative positioning within the field of view. The center of gravity of the image is marked with a blue cross, whereas the detected Houbara is highlighted with a red mask.
+              <strong>Fig. 5:</strong> Results for Room0 of the Replica dataset using segment masks. The figure showcases ground truth RGB, ground truth depth, rasterized RGB (PSNR: 34.25), rasterized depth (L1: 0.00), rasterized silhouette, and the rasterized semantic map (IoU: 0.8916).
             </h2>
           </div>
         </div>
@@ -213,9 +213,9 @@ While the presented results provide a strong proof of concept, limitations in da
         <!-- Image 6 -->
         <div class="item">
           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/image31.png" alt="Examples of HuBot’s movements across various environments" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <img src="static/images/Fig6.png" alt="Results for Room0 of the Replica dataset without using segment masks" style="max-width: 80%; height: auto; border-radius: 10px;">
             <h2 class="subtitle has-text-centered">
-              <strong>Figure 4:</strong> Examples of HuBot’s movements across various environments: Top row: Feeding motion sequence demonstrating biomimetic movements during feeding behaviors. Second row: Head left and right motion showcasing head-orientation adjustments, mimicking natural head movements. Third row: Movement on a flat surface illustrating stability and navigation on even terrain. Fourth row: Movement on a grass surface highlighting adaptability to grassy terrains. Bottom row: Movement on a granular surface depicting maneuverability on sandy and granular surfaces. These images demonstrate HuBot’s operational capabilities under different conditions, enhancing understanding of its observations with varied environments.
+              <strong>Fig. 6:</strong> Results for Room0 of the Replica dataset without using segment masks. The figure showcases ground truth RGB, ground truth depth, rasterized RGB (PSNR: 20.18), rasterized depth (L1: 0.23), rasterized silhouette, and the depth difference (L1).
             </h2>
           </div>
         </div>
@@ -223,9 +223,39 @@ While the presented results provide a strong proof of concept, limitations in da
         <!-- Image 7 -->
         <div class="item">
           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
-            <img src="static/images/image41.png" alt="HuBot’s preliminary trials with Houbara bustards in captivity" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <img src="static/images/Fig7.png" alt="Feature confidence trends over time for the underwater dataset" style="max-width: 80%; height: auto; border-radius: 10px;">
             <h2 class="subtitle has-text-centered">
-              <strong>Figure 5:</strong> HuBot’s preliminary trials with Houbara bustards in captivity. Top row: interaction with Female Houbara bustard, reacting with avoidance and cautious behavior. Second row: Male performing sexual courtship behavior directed at the HuBot. Third row: Male exhibiting a cautious stance, closely observing HuBot’s movements without closely approaching and interacting. Bottom Row: Male performing behaviors similar to the first male, including courtship display behavior. These examples illustrate varied behavioral responses of captive Houbara bustards toward the HuBot, linked to sex, individual personality, and, for males, individual differences in sexual motivation.
+              <strong>Fig. 7:</strong> Feature confidence trends over time for the underwater dataset. The plot illustrates the confidence variations of key features such as underwater camera, marine plants, and coral reef across time indices.
+            </h2>
+          </div>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/Fig8.png" alt="Top 10 features by average confidence for the underwater dataset" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 8:</strong> Top 10 features by average confidence for the underwater dataset. The bar plot highlights the dominance of underwater camera and marine plants as the most confident features.
+            </h2>
+          </div>
+        </div>
+
+        <!-- Image 9 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/Fig9.png" alt="Confidence heatmap showing the relationship between features and recommendations for the underwater dataset" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 9:</strong> Confidence heatmap showing the relationship between features and recommendations for the underwater dataset. The heatmap emphasizes high-confidence features and their corresponding recommendations, providing actionable insights for optimizing underwater mapping performance.
+            </h2>
+          </div>
+        </div>
+
+        <!-- Image 10 -->
+        <div class="item">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+            <img src="static/images/Fig10.png" alt="Visualization of ground truth and rasterized data at time step 19" style="max-width: 80%; height: auto; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 10:</strong> Visualization of ground truth and rasterized data at time step 19. The figure includes ground truth RGB, ground truth depth, rasterized RGB (PSNR: 19.53), rasterized depth (L1: 0.09), rasterized silhouette, and depth difference (L1).
             </h2>
           </div>
         </div>
