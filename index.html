@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>AI-Driven Semantic SLAM: Integrating Real-Time Depth Estimation and Adaptive Optimization for Diverse Environments</title>
+  <title>AI-Driven Robotic Semantic SLAM: Real-Time Depth and Adaptive Mapping for Autonomous Navigation in Complex Environments</title>
   <link rel="icon" type="image/x-icon" href="static/images/78357759.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">AI-Driven Semantic SLAM: Integrating Real-Time Depth Estimation and Adaptive Optimization for Diverse Environments</h1>
+            <h1 class="title is-1 publication-title">AI-Driven Robotic Semantic SLAM: Real-Time Depth and Adaptive Mapping for Autonomous Navigation in Complex Environments</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -136,15 +136,7 @@
       </div>
 
       <h2 class="subtitle has-text-centered">
-        Overview of the proposed Semantic-Aware Adaptive 3D Mapping Framework with Vision-Language Reasoning. The
- framework integrates semantic and geometric features for robust 3D mapping and pose optimization. RGB inputs are processed
- with Depth Anything V2 for dense depth estimation and CLIP for zero-shot object classification, enabling semantic context
- analysis. Semantic-Aware Depth Fusion combines geometric consistency with semantic features, improving spatial accuracy
- and adaptability. LLaMa dynamically adjusts mapping parameters, including keyframe selection, pruning, and iterations, based
- on detected features and scene analysis. Gaussian-splatting with multi-channel optimization refines mapping through pose
- adjustments, densification, and redundancy removal. The outputs include 3D reconstructions, pose trajectories, and keyframe
- metrics such as PSNR, RPE, ATE, and SSIM, supporting applications in autonomous navigation, underwater exploration, and
- intelligent robotics.
+        The framework integrates Depth Anything V2 for real-time dense depth estimation, CLIP for zero-shot semantic feature classification, and LLaMA for dynamic mapping adjustments. Depth Anything V2 generates consistent depth maps, while CLIP identifies contextual features (e.g., underwater scenes, clutter, reflective surfaces) to guide optimization. LLaMA refines SLAM parameters based on detected features and scene descriptions, enabling adaptability to dynamic environments such as underwater or cluttered scenarios. The integration of these components within SAFARI ensures robust 3D mapping, improved pose optimization, and enhanced scalability in complex conditions.
       </h2>
     </div>
   </div>
@@ -154,6 +146,38 @@
 
 </section>
 <!-- End teaser video -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Video 1 -->
+      <div class="column is-one-third has-text-centered">
+        <video controls width="100%">
+          <source src="static/videos/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Video 1: Description of the content.</p>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="column is-one-third has-text-centered">
+        <video controls width="100%">
+          <source src="static/videos/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Video 2: Description of the content.</p>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="column is-one-third has-text-centered">
+        <video controls width="100%">
+          <source src="static/videos/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Video 3: Description of the content.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -163,11 +187,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-This paper introduces an AI-driven semantic-aware SLAM framework that combines Large Language Models (LLMs), CLIP-based zero-shot recognition, real-time dense depth estimation using DepthAnythingV2, and a novel semantic-depth fusion mechanism for enhanced 3D mapping and pose optimization. Unlike traditional SLAM systems that rely exclusively on geometric features, the proposed framework integrates semantic reasoning with geometry-based optimization, enabling robust scene understanding and adaptive mapping in challenging environments such as cluttered indoor/outdoor scenes, dynamic objects, and low-light conditions.
-The framework features a semantic-depth fusion module that refines depth maps by dynamically adjusting confidence values based on the semantic classification of corresponding image features. Real-time dense depth estimation is achieved using DepthAnythingV2, eliminating the need for offline preprocessing and enabling adaptability to dynamic scenes. Context-aware feature classification via CLIP and semantic reasoning through LLMs improve keyframe selection and enhance mapping reliability, particularly in the presence of occlusions, reflective surfaces, and structural ambiguities.
-Experiments on the Replica dataset using 200-frame sequences demonstrate promising performance in absolute trajectory error (ATE), relative pose error (RPE), and perceptual metrics such as PSNR and IoU. Notably, the integration of semantic-depth fusion achieves higher depth consistency and improved spatial accuracy. However, results reveal limitations in handling reflective surfaces and achieving high segmentation accuracy (IoU remains low without segment masks). Ablation studies further validate the contributions of semantic-depth fusion and AI-guided perception, emphasizing scalability and adaptability to diverse scenarios.
-While the presented results provide a strong proof of concept, limitations in dataset size and experimental scope are acknowledged. Future work will focus on expanding experimental validation, addressing reflective surface challenges, and enhancing semantic segmentation capabilities. This work advances semantic SLAM by bridging AI-driven perception with real-time 3D mapping, offering a foundation for significant improvements in autonomous navigation, robotics, and augmented reality applications.          </p>
-        </div>
+This paper introduces SAFARI (Semantic-Aware Framework for Adaptive and Robust Robotic SLAM Implementation), an AI-driven framework tailored for autonomous navigation in complex and dynamic environments. Traditional SLAM systems often face challenges with dynamic objects, reflective surfaces, and ambiguous structures due to their reliance solely on geometric features.
+SAFARI integrates DepthAnythingV2 for real-time depth estimation, CLIP for zero-shot semantic scene understanding, and LLaMA for adaptive optimization. LLaMA enables real-time analysis and dynamic parameter tuning, such as adjusting tracking and mapping iterations based on scene complexity and feature density. A novel semantic-depth fusion module combines semantic insights with geometric data to refine depth maps, optimize keyframe selection, and enhance mapping accuracy.
+The framework is evaluated on the Replica and KU Marine Pool (KUMP) datasets, the latter designed to simulate underwater robotic navigation scenarios with real-world challenges such as low visibility, reflective surfaces, and dynamic currents. SAFARI demonstrates superior performance compared to traditional methods, achieving significant improvements in Absolute Trajectory Error (ATE), Relative Pose Error (RPE), and perceptual mapping metrics.
+While SAFARI showcases robust performance, challenges persist in handling highly reflective surfaces and achieving precise semantic segmentation. Future work will enhance semantic-depth fusion algorithms, integrate advanced segmentation techniques, and expand the KUMP dataset for broader robotic applications. SAFARI represents a significant advancement in AI-powered SLAM, offering an adaptable and reliable solution for autonomous systems in diverse and challenging environments.        </div>
       </div>
     </div>
   </div>
